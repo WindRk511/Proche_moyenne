@@ -15,21 +15,21 @@ debut
     pour(i<-0;i<n;i++)
         afficher("T[",i,"]=");
         lire(T[i]);
-        s=s+T[i];
+        s=s+T[i];                 //calcul somme des contenus du tableau
     finpour
 
-    m<-s/n;
-    k<-m-T[0];
+    m<-s/n;                  //calcul moyenne
+    k<-m-T[0];                  //calcul difference entre le moyenne et le contenu du tableau
     si k<0 alors
         k=(-k);
     finsi
     pour(i<-1;i<n;i++)
-        p<-m-T[i];
+        p<-m-T[i];                  //calcul autre difference entre le moyenne et le contenu du tableau
         si p<0 alors
             p<-(-p);
         finsi
         
-        si p<k alors
+        si p<k alors                  //comparaison entre les difference des contenus du tableau à la valeur du moyenne 
             vp<-T[i];
         finsi    
 
